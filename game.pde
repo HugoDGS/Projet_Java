@@ -6,14 +6,16 @@ class Game
   String _levelName;
 
   Game() {
-    _board = null;
+    _board = new Board("levels/level1.txt", 30);
     _hero = null;
   }
+  
 
   void update() {
   }
 
   void drawIt() {
+    _board.drawIt();
   }
 
   void handleKey(int k) {
